@@ -55,7 +55,7 @@
 .container--product .listItem :global(.vtex-button__label){
     color: white;
     padding: 10px 15px !important;
-    width: 42vh;
+    width: 100%;
     font-size: 15px;
 }
 .container--product .listItemActive :global(.vtex-button__label){
@@ -147,6 +147,9 @@
     display: block;
 }
 @media (max-width: 600px) {
+    .container--productM {
+        display: none !important;
+    }
     .listItem :global(.vtex-button__label){
         padding: 0;
         letter-spacing:0;
@@ -180,7 +183,7 @@
         display: none;
     }
     .container--productM{
-        display: block !important;
+        display: none !important;
         margin: 0 25px 40px 25px;
     }
     .container--productM .contentContainer {
@@ -206,7 +209,7 @@
         font-weight: 700;
         font-size: 16px;
         display: block;
-        width: 38vh;
+        width: 100%;
         text-align: left;
     }
     .container--productM .listItem{

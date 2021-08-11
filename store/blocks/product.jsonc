@@ -5,6 +5,9 @@
     "flex-layout.row#product-main",
     "tab-layout#product",
     "tab-layout#productM",
+    "disclosure-layout#caracteristicas",
+    "disclosure-layout#beneficios",
+    "disclosure-layout#recomendados",
     "flex-layout.row#reviews-and-ratings",
     "rich-text#product1",
     "shelf.relatedProducts#1",
@@ -18,6 +21,93 @@
     "showOnMobile": true
   }
 },
+       //Tabbers-mobile
+       "disclosure-layout#caracteristicas": {
+        "children": ["disclosure-trigger#caracteristicas", "disclosure-content#caracteristicas"],
+        "props": {
+          "animated": true,
+          "blockClass":"caracteristicas"
+        }
+      },
+      "disclosure-trigger#caracteristicas": {
+        "children": ["rich-text#caracteristicas"],
+        "props": {
+          "blockClass":"caracteristicas"
+        }
+      },
+      "disclosure-content#caracteristicas": {
+        "children": [
+          "product-specification-group#tap1"
+        ],
+        "props": {
+          "tabId": "product1MMM",
+          "blockClass": "product1MMM"
+        }
+      },
+      "rich-text#caracteristicas": {
+        "props": {
+          "text": "Caracteristicas",
+          "blockClass": "productMOBILE1"
+        }
+      },
+      //Tabbers-mobile2
+      "disclosure-layout#beneficios": {
+        "children": ["disclosure-trigger#beneficios", "disclosure-content#beneficios"],
+        "props": {
+          "animated": true,
+          "blockClass":"caracteristicas"
+        }
+      },
+      "disclosure-trigger#beneficios": {
+        "children": ["rich-text#beneficios"],
+        "props": {
+          "blockClass":"caracteristicas"
+        }
+      },
+      "disclosure-content#beneficios": {
+        "children": [
+          "product-specification-group#tap2"
+        ],
+        "props":{
+          "blockClass": "InformacionBENEFICIOS"
+        }
+      },
+      "rich-text#beneficios": {
+        "props": {
+          "text": "Beneficios",
+          "blockClass": "productMOBILE1"
+        }
+      },      
+      //Tabbers-mobile3
+      "disclosure-layout#recomendados": {
+        "children": ["disclosure-trigger#recomendados", "disclosure-content#recomendados"],
+        "props": {
+          "animated": true,
+          "blockClass":"caracteristicas"
+        }
+      },
+      "disclosure-trigger#recomendados": {
+        "children": ["rich-text#recomendados"],
+        "props": {
+          "blockClass":"caracteristicas"
+        }
+      },
+      "disclosure-content#recomendados": {
+        "children": [
+          "product-specification-group#tap5"
+        ],
+        "props": {
+          "tabId": "InformacionRECOMENDADOS",
+          "blockClass": "InformacionRECOMENDADOS"
+        }
+      },
+      "rich-text#recomendados": {
+        "props": {
+          "text": "Recomendados para",
+          "blockClass": "productMOBILE1"
+        }
+      },
+
 "flex-layout.row#product-breadcrumb": {
   "props": {
     "marginTop": 4

@@ -308,7 +308,21 @@
   margin: 20px 100px 0 100px;
   font-size: 27px;
 }
+.container--tabChat3 {
+  display: none;
+}
+
 @media (max-width: 600px) {
+  .paragraph--productMOBILE1 {
+    color: white;
+    padding: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+  .paragraph--textostilo {
+      padding: 0 5%;
+  }
   .container--textFooM{
     justify-content: center;
   }
